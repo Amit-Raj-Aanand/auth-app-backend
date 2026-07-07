@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+# database configuration
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_auth_app
+    username: root
+    password: root
+
+  # jpa & hibernate configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
